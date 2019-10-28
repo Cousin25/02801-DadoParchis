@@ -15,7 +15,6 @@
  */
 package org.japo.java.main;
 
-
 import java.util.Random;
 
 /**
@@ -23,20 +22,16 @@ import java.util.Random;
  * @author ANDRÉS COSÍN ZAMARREÑO - Cousin183@gmail.com
  */
 public class Main {
+
     public static final Random RND = new Random();
-    
-    
+
     public static void main(String[] args) {
-    
-    
-    final int max_dado=6;
-    final int min_dado=1;
-    
-   
-    int dado = RND.nextInt(max_dado - min_dado + 1) + min_dado;
-        
-    
-    System.out.printf("Tirada dado....:%d%n", dado);
+
+        final int max_dado = 6;
+        final int min_dado = 1;
+
+        int dado = RND.nextInt(max_dado - min_dado + 1) + min_dado;
+
+        System.out.printf("Tirada dado....:%d%n", dado);
     }
-    
 }
